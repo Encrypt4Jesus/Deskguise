@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35208.52
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deskguise", "Deskguise.csproj", "{29FFDB81-A7DA-49DF-9070-ED2D489421FD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deskguise", "Source\Deskguise.csproj", "{29FFDB81-A7DA-49DF-9070-ED2D489421FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<UseWindowsForms>true</UseWindowsForms>
+		<OutputType>WinExe</OutputType>
+
+		<Nullable>annotations</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Title>Deskguise</Title>
+		<Product>Deskguise</Product>
+		<AssemblyName>Deskguise</AssemblyName>
+		<AssemblyTitle>Deskguise</AssemblyTitle>
+		<Description>Instantly hides your active windows—and your shame—with just a click.</Description>
+		<Authors>Encrypt4Jesus</Authors>
+		<RepositoryUrl>https://github.com/Encrypt4Jesus/Deskguise</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<MajorVersion Condition=" '$(MajorVersion)' == '' ">1</MajorVersion>
+		<MinorVersion Condition=" '$(MinorVersion)' == '' ">0</MinorVersion>
+		<PatchVersion Condition=" '$(PatchVersion)' == '' ">0</PatchVersion>
+
+		<VersionPrefix>$(MajorVersion).$(MinorVersion).$(PatchVersion)</VersionPrefix>
+		<VersionSuffix></VersionSuffix>
+		<ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)' == 'Release'">
+		<BaseOutputPath>..\Binaries</BaseOutputPath>
+		<OutputPath>..\Binaries\Release</OutputPath>
+		<DebugType>none</DebugType>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+	</PropertyGroup>
+
+</Project>
